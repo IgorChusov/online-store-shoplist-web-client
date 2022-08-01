@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOPLIST</title>
+  <link rel="stylesheet" href="./src/style/normalaze.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="header__top-container container">
+        <a class="header__description">Good Luck With Shopping. Call Us Free 24/7 : (555) 172-244-7888 | (555) 172-244</a>
+        <div class="header__top-button-group">
+          <a class="header__top-btn header__top-btn-like"><svg aria-hidden="true"  data-prefix="fas" data-icon="heart" class=" header__top-heart" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="#939393" d="M472.1 270.5l-193.1 199.7c-12.64 13.07-33.27 13.08-45.91 .0107l-193.2-199.7C-16.21 212.5-13.1 116.7 49.04 62.86C103.3 15.88 186.4 24.42 236.3 75.98l19.7 20.27l19.7-20.27c49.95-51.56 132.1-60.1 187.3-13.12C525.1 116.6 528.2 212.5 472.1 270.5z"></path></svg>Wish list <span class="header_top-btn-like-current">(0)</span></a>
+          <a class="header__top-btn header__top-btn-return"><svg aria-hidden="true"  data-prefix="fas" data-icon="share" class="header__top-share" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M503.7 226.2l-176 151.1c-15.38 13.3-39.69 2.545-39.69-18.16V272.1C132.9 274.3 66.06 312.8 111.4 457.8c5.031 16.09-14.41 28.56-28.06 18.62C39.59 444.6 0 383.8 0 322.3c0-152.2 127.4-184.4 288-186.3V56.02c0-20.67 24.28-31.46 39.69-18.16l176 151.1C514.8 199.4 514.8 216.6 503.7 226.2z"></path></svg>Checkout</a>
+        </div>
+      </div>
+    </div>
+    <div class="header__middle">
+      <div class="header__middle-container container">
+        <div class="header__middle-content">
+          <button class="header__btn-burger"><svg  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="header__btn-burger-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M416 224H31.1C14.33 224 0 238.3 0 256s14.33 32 31.1 32h384C433.7 288 448 273.7 448 256S433.7 224 416 224zM416 384H31.1C14.33 384 0 398.3 0 415.1S14.33 448 31.1 448h384C433.7 448 448 433.7 448 416S433.7 384 416 384zM416 64H31.1C14.33 64 0 78.33 0 95.1S14.33 128 31.1 128h384C433.7 128 448 113.7 448 96S433.7 64 416 64z"></path></svg></button>
+          <div class="header__burger-menu">
+            <div id="accordion-burger-menu" class="header__accordion header-accordion">
+              <h4 class="header-accordion__item">
+                <a href="" class="header-accordion__link">Home</a>
+              </h4>
+              <h3 class="header-accordion__item">
+                <a href="" class="header-accordion__link">Clothes</a>
+                <button class="header-accordion__btn" aria-label="развернуть/свернуть">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="header-accordion__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><path fill="currentColor" d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path></svg>
+                </button>
+              </h3>
+              <div class="header-accordion__content">
+                <div class="header__accordion header-accordion">
+                  <h3 class="header-accordion__item">
+                    <a href="" class="header-accordion__link">Kids</a>
+                    <button class="header-accordion__btn" aria-label="развернуть/свернуть">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="header-accordion__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><path fill="currentColor" d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path></svg>
+                    </button>
+                  </h3>
+                  <div class="header-accordion__content">
+                    <ul class="header-accordion__list">
+                      <li class="header-accordion__item">
+                        <a class="header-accordion__link" href="">Capri</a>
+                      </li>
+                      <li class="header-accordion__item">
+                        <a class="header-accordion__link" href="">Jacket</a>
+                      </li>
+                      <li class="header-accordion__item">
+                        <a class="header-accordion__link" href="">Shorts</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <h3 class="header-accordion__item">
+                    <a href="" class="header-accordion__link">Women</a>
+                    <button class="header-accordion__btn" aria-label="развернуть/свернуть">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="header-accordion__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><path fill="currentColor" d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path></svg>
+                    </button>
+                  </h3>
+                  <div class="header-accordion__content">
+                    <ul class="header-accordion__list">
+                      <li class="header-accordion__item">
+                        <a class="header-accordion__link" href="">Dresses</a>
+                      </li>
+                      <li class="header-accordion__item">
+                        <a class="header-accordion__link" href="">Frocks</a>
+                      </li>
+                      <li class="header-accordion__item">
+                        <a class="header-accordion__link" href="">Saree</a>
+                      </li>
+                      <li class="header-accordion__item">
+                        <a class="header-accordion__link" href="">SUits</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <h3 class="header-accordion__item">
+                    <a href="" class="header-accordion__link">Man</a>
+                    <button class="header-accordion__btn" aria-label="развернуть/свернуть">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="header-accordion__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><path fill="currentColor" d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path></svg>
+                    </button>
+                  </h3>
+                  <div class="header-accordion__content">
+                    <ul class="header-accordion__list">
+                      <li class="header-accordion__item">
+                        <a class="header-accordion__link" href="">Denim</a>
+                      </li>
+                      <li class="header-accordion__item">
+                        <a class="header-accordion__link" href="">Jeans</a>
+                      </li>
+                      <li class="header-accordion__item">
+                        <a class="header-accordion__link" href="">Shirts</a>
+                      </li>
+                      <li class="header-accordion__item">
+                        <a class="header-accordion__link" href="">T-Shirts</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <h3 class="header-accordion__item">
+                <a href="" class="header-accordion__link">Accessories</a>
+                <button class="header-accordion__btn" aria-label="развернуть/свернуть">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="header-accordion__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><path fill="currentColor" d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path></svg>
+                </button>
+              </h3>
+              <div class="header-accordion__content">
+                <ul class="header-accordion__list">
+                  <li class="header-accordion__item">
+                    <a class="header-accordion__link" href="">Cap</a>
+                  </li>
+                  <li class="header-accordion__item">
+                    <a class="header-accordion__link" href="">HandBags</a>
+                  </li>
+                </ul>
+              </div>
+              <h4 class="header-accordion__item">
+                <a href="" class="header-accordion__link">Art</a>
+              </h4>
+              <h3 class="header-accordion__item">
+                <a href="" class="header-accordion__link">Kitchen Accessories</a>
+                <button class="header-accordion__btn" aria-label="развернуть/свернуть">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="header-accordion__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><path fill="currentColor" d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path></svg>
+                </button>
+              </h3>
+              <div class="header-accordion__content">
+                <ul class="header-accordion__list">
+                  <li class="header-accordion__item">
+                    <a class="header-accordion__link" href="">Blender</a>
+                  </li>
+                  <li class="header-accordion__item">
+                    <a class="header-accordion__link" href="">Colander</a>
+                  </li>
+                  <li class="header-accordion__item">
+                    <a class="header-accordion__link" href="">Cutting Board</a>
+                  </li>
+                  <li class="header-accordion__item">
+                    <a class="header-accordion__link" href="">Mixing Bowls</a>
+                  </li>
+                  <li class="header-accordion__item">
+                    <a class="header-accordion__link" href="">Rolling Pin</a>
+                  </li>
+                </ul>
+              </div>
+              <h4 class="header-accordion__item">
+                <a href="" class="header-accordion__link">Smart Watch</a>
+              </h4>
+
+              <h4 class="header-accordion__item">
+                <a href="" class="header-accordion__link">Electronics</a>
+              </h4>
+
+              <h4 class="header-accordion__item">
+                <a href="" class="header-accordion__link">Home Accessories</a>
+              </h4>
+
+              <h4 class="header-accordion__item">
+                <a href="" class="header-accordion__link">Blogs</a>
+              </h4>
+              <div class="header-accordion__content">
+              </div>
+            </div>
+          </div>
+          <a class="header__link-logo" href=""> <img class="header_logo" src="./src/images/logo.png" alt="Логотип интернет магазина SHOPLIST"></a>
+          <form class="header__form">
+            <input class="header__input" placeholder="Search" type="text">
+            <button aria-label="Button search" class="header__form-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" class="header__form-button-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="white" d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"></path></svg>
+              </button>
+          </form>
+          <div class="header__link-group">
+            <a class="header__link-panel header__link-account"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" class="header__link-account-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path></svg> <span class="header_link-text-none">My Account</span>  </a>
+            <a class="header__link-panel header__link-cart"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cart-shopping" class="header__link-cart-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512"><path fill="currentColor" d="M463.1 416c-26.51 0-47.1 21.49-47.1 48s21.49 48 47.1 48s47.1-21.49 47.1-48S490.5 416 463.1 416zM175.1 416c-26.51 0-47.1 21.49-47.1 48S149.5 512 175.1 512s47.1-21.49 47.1-48S202.5 416 175.1 416zM569.5 44.73c-6.109-8.094-15.42-12.73-25.56-12.73H121.1L119.6 19.51C117.4 8.19 107.5 0 96 0H23.1C10.75 0 0 10.75 0 23.1S10.75 48 23.1 48h52.14l60.28 316.5C138.6 375.8 148.5 384 160 384H488c13.25 0 24-10.75 24-23.1C512 346.7 501.3 336 488 336H179.9L170.7 288h318.4c14.29 0 26.84-9.47 30.77-23.21l54.86-191.1C577.5 63.05 575.6 52.83 569.5 44.73z"></path></svg>MY CART</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="header__bottom-container container">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <button class="header__list-btn">HOME</button></li>
+            <li class="header__list-item">
+              <button class="header__list-btn">CLOTHES</button>
+              <div class="header__prop-menu header__prop-menu-clothes">
+                <div class="header__drop-menu-content">
+                  <div class="header__drop-menu-left">
+                    <h3 class="header__drop-menu-title">Kids</h3>
+                    <ul class="header__drop-menu-list">
+                      <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Capri</a></li>
+                      <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Jacket</a></li>
+                      <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Shorts</a></li>
+                    </ul>
+                  </div>
+                  <div class="header__drop-menu-middle">
+                    <h3 class="header__drop-menu-title">Women</h3>
+                    <ul class="header__drop-menu-list">
+                      <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Dresses</a></li>
+                      <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Frocks</a></li>
+                      <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Saree</a></li>
+                      <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Suits</a></li>
+                    </ul>
+                  </div>
+                  <div class="header__drop-menu-right">
+                    <h3 class="header__drop-menu-title">Men</h3>
+                    <ul class="header__drop-menu-list">
+                      <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Denim</a></li>
+                      <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Jeans</a></li>
+                      <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Shirts</a></li>
+                      <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">T-Shirts</a> </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+            <li class="header__list-item">
+              <button class="header__list-btn">ACCESSORIES</button>
+              <div class="header__prop-menu header__prop-menu-accessories">
+                <div class="header__drop-menu-content">
+                  <ul class="header__drop-menu-list">
+                    <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Cap</a></li>
+                    <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Handbags</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="header__list-item">
+              <button class="header__list-btn">ART</button></li>
+            <li class="header__list-item">
+              <button class="header__list-btn">KITCHEN ACCESSORIES</button>
+              <div class="header__prop-menu header__prop-menu-kitchen-accessories">
+                <div class="header__drop-menu-content">
+                  <ul class="header__drop-menu-list">
+                    <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Blender</a></li>
+                    <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Colander</a></li>
+                    <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Cutting Board</a></li>
+                    <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Mixing Bowls</a></li>
+                    <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Rolling Pin</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="header__list-item">
+              <button class="header__list-btn">SMART WATCH</button></li>
+            <li class="header__list-item">
+              <button class="header__list-btn">MORE</button>
+              <div class="header__prop-menu header__prop-menu-more">
+                <div class="header__drop-menu-content">
+                  <ul class="header__drop-menu-list">
+                    <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Electronics</a></li>
+                    <li class="header__drop-menu-item"><a class="header__drop-menu-link" href="">Hone Accessories</a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="header__list-item">
+              <button class="header__list-btn">BLOGS</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section-hero">
+      <div class="section-hero__container container">
+        <div class="section-hero__top-content">
+          <div class="section-hero__left section-hero__left-slide1">
+            <div class="swiper section-hero__swiper">
+
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide section-hero__swiper-slide section-hero__swiper-slide1">
+                  <div class="section-hero__left-content">
+                    <p class="section-hero__left-description">Limited Edition</p>
+                    <h2 tabindex="0" aria-label="Summer Special Jackets" class="section-hero__left-title">Summer Special <strong class="">Jackets</strong></h2>
+                    <p class="section-hero__left-text">Lorem Ipsum is simply dummy text of the printing and tyeseting industry.</p>
+                    <button class="section-hero__left-btn">LETS SHOP</button>
+                  </div>
+                </div>
+                <div class="swiper-slide section-hero__swiper-slide section-hero__swiper-slide2">
+                  <div class="section-hero__left-content">
+                    <p class="section-hero__left-description">Limited Edition</p>
+                    <h2 tabindex="0" aria-label="Summer Special Wireless" class="section-hero__left-title">Speaker Special <strong class="">Wireless</strong></h2>
+                    <p class="section-hero__left-text">Lorem Ipsum is simply dummy text of the printing and tyeseting industry.</p>
+                    <button class="section-hero__left-btn">LETS SHOP</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination section-hero__swiper-pagination"></div>
+              <div class="swiper-button-prev section-hero__button-prev"></div>
+              <div class="swiper-button-next section-hero__button-next"></div>
+            </div>
+          </div>
+          <div class="section-hero__right">
+            <div class="section-hero__right-card section-hero__right-card1">
+              <div class="section-hero__right-content">
+                <span class="section-hero__right-card-sale">-20%</span>
+                <p class="section-hero__right-description">Octa Core</p>
+                <h3 class="section-hero__right-title">LAPTOP</h3>
+              </div>
+            </div>
+            <div class="section-hero__right-card section-hero__right-card2">
+              <div class="section-hero__right-content section-hero__right-content-card2">
+                <h3 class="section-hero__right-title"><span class="section-hero__right-title_purpure">SILVER</span>STONE</h3>
+                <p class="section-hero__right-description-card2">Octa Core</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-hero__bottom-content">
+          <div class="section-hero__bottom-card section-hero__bottom-card1">
+            <h3 class="section-hero__bottom-title">EXTRAORDINARY</h3>
+            <p class="section-hero__bottom-text">Handbangs<span class="section-hero__bottom-note section-hero__bottom-note-card1">Hot</span></p>
+          </div>
+          <div class="section-hero__bottom-card section-hero__bottom-card2">
+            <h3 class="section-hero__bottom-title">READY LIGHTING?</h3>
+            <p class="section-hero__bottom-text"><span class="section-hero__bottom-note section-hero__bottom-note-card2">Colorful</span>Hot Offer!!</p>
+          </div>
+          <div class="section-hero__bottom-card section-hero__bottom-card3">
+            <h3 class="section-hero__bottom-title">NECKLESS<span class="section-hero__bottom-note section-hero__bottom-note-card3">Limited</span></h3>
+            <p class="section-hero__bottom-text">Extraordinary</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-product">
+      <div class="section-product__container container">
+        <div class="section-product__header">
+          <h2 class="title section-product__title">OUR PRODUCT</h2>
+          <div class="section-product__btn-group">
+            <button data-path="tab1" class="section-product__btn-tab section-product__btn-tab1 section-product__btn-tab_active">Latest</button>
+            <button data-path="tab2" class="section-product__btn-tab section-product__btn-tab2">Bestseller</button>
+            <button data-path="tab3" class="section-product__btn-tab section-product__btn-tab3">Special</button>
+          </div>
+          <div class="swiper-button-prev section-product__button-prev"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" class="section-product__button-next-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="#939393" d="M447.1 256C447.1 273.7 433.7 288 416 288H109.3l105.4 105.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H416C433.7 224 447.1 238.3 447.1 256z"></path></svg></div>
+          <div class="swiper-button-next section-product__button-next"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-product__button-next-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="#939393" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg></div>
+        </div>
+        <div class="section-product__content">
+          <div data-target="tab1" class="section-product__swipper section-product__swipper-tab1 section-product__swipper_active">
+
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__img1"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Formation Venkash</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 122.00<span class="section-product__card-sale">50%</span> <s class="section-product__card-crossed">$242.99.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__img2"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title">
+                      <a class="section-product__card-link" href="">Varius Neque At Enim</a> </h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                    </div>
+                    <p class="section-product__card-info">$ 122.00</p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__img3"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Suspendisse Massa Nulla</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                    </div>
+                    <p class="section-product__card-info">$ 62.00<span class="section-product__card-sale">50%</span> <s class="section-product__card-crossed">$122.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__img4"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Bhumitation Centyrao</a>n</h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                    </div>
+                    <p class="section-product__card-info">$ 842.00<span class="section-product__card-sale">30%</span><s class="section-product__card-crossed">$1,202.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__img5"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Mauris Blandit Vehicula</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                    </div>
+                    <p class="section-product__card-info">$ 1000.00<span class="section-product__card-sale">50%</span> <s class="section-product__card-crossed">$2,000.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__img6"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Mauris Blandit Vehicula</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                    </div>
+                    <p class="section-product__card-info">$ 1000.00<span class="section-product__card-sale">50%</span> <s class="section-product__card-crossed">$2,000.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__img7"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Mauris Blandit Vehicula</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                    </div>
+                    <p class="section-product__card-info">$ 1000.00<span class="section-product__card-sale">50%</span> <s class="section-product__card-crossed">$2,000.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__img8"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Mauris Blandit Vehicula</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                    </div>
+                    <p class="section-product__card-info">$ 1000.00<span class="section-product__card-sale">50%</span> <s class="section-product__card-crossed">$2,000.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__img9"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Mauris Blandit Vehicula</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                    </div>
+                    <p class="section-product__card-info">$ 1000.00<span class="section-product__card-sale">50%</span> <s class="section-product__card-crossed">$2,000.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 10 -->
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__img10"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Mauris Blandit Vehicula</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i>
+                      </span>
+                    </div>
+                    <p class="section-product__card-info">$ 1000.00<span class="section-product__card-sale">50%</span> <s class="section-product__card-crossed">$2,000.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- tab2 -->
+          <div data-target="tab2" class="section-product__swipper section-product__swipper-tab2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab2-img1"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Bhumitationa Centyraon</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i> </span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 842.00<span class="section-product__card-sale">30%</span> <s class="section-product__card-crossed">$1,202.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- slide 2 -->
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab2-img2"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Cum Sociis Natoque</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 98.00<span class="section-product__card-sale">20%</span> <s class="section-product__card-crossed">$122.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab2-img3"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Varius Neque At Enim</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 122.00</p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab2-img4"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Animation Descentqtion</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 1,082.00<span class="section-product__card-sale">10%</span> <s class="section-product__card-crossed">$1,902.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab2-img5"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Justo Neque Commodo Nisl</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 122.00</p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab2-img6"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Mauris Blandit Vehicula</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 1,000.00<span class="section-product__card-sale">50%</span> <s class="section-product__card-crossed">$2,000.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 7 -->
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab2-img7"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Tarundecf Beseking</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 482.00<span class="section-product__card-sale">20%</span> <s class="section-product__card-crossed">$602.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- tab3 -->
+          <div data-target="tab3" class="section-product__swipper section-product__swipper-tab3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab3-img1"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Animation Descentqtion</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 1,082.00<span class="section-product__card-sale">10%</span> <s class="section-product__card-crossed">$1,902.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- slide 2 -->
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab3-img2"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Bhumitationa Centyraon</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i> </span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 842.00<span class="section-product__card-sale">30%</span> <s class="section-product__card-crossed">$1,202.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab3-img3"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Cum Sociis Natoque</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 98.00<span class="section-product__card-sale">20%</span> <s class="section-product__card-crossed">$122.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab3-img4"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Curabitur Dolor Nunc</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 110.00<span class="section-product__card-sale">10%</span> <s class="section-product__card-crossed">$122.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab3-img5"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Formation Venkash</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 122.00<span class="section-product__card-sale">50%</span> <s class="section-product__card-crossed">$242.99.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab3-img6"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Mauris Blandit Vehicula</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 1000.00<span class="section-product__card-sale">50%</span> <s class="section-product__card-crossed">$2,000.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+
+                </div>
+              </div>
+              <!-- 7 -->
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab3-img7"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Meghpolo Nepturis</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 242.00<span class="section-product__card-sale">29%</span> <s class="section-product__card-crossed">$337.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 8 -->
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab3-img8"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Suspendisse Massa Nulla</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 62.00<span class="section-product__card-sale">50%</span> <s class="section-product__card-crossed">$122.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 9 -->
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab3-img9"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Tarundecf Beseking</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 482.00<span class="section-product__card-sale">20%</span> <s class="section-product__card-crossed">$602.00</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 10 -->
+              <div class="swiper-slide section-product__swipper-slide">
+                <div class="section-product__card">
+                  <div class="section-product__img section-product__tab3-img10"></div>
+                  <div class="section-product__card-content">
+                    <h3 class="section-product__card-title"><a class="section-product__card-link" href="">Mauris Blandit Vehicula</a></h3>
+                    <div class="section-product__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-product__card-info">$ 122.00<span class="section-product__card-sale">1%</span> <s class="section-product__card-crossed">$123.20</s></p>
+                    <button class="section-product__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- конец product swipper\tabs -->
+        </div>
+        <div class="section-product__bottom">
+          <div class="section-product__bottom-card section-product__bottom-card1">
+            <a href="#"></a>
+            <div class="section-product__bottom-content">
+              <span class="section-product__bottom-note">40% OFF</span>
+              <h3 class="section-product__bottom-title">FASHION LAB</h3>
+              <p class="section-product__bottom-text">Explore our Range</p>
+            </div>
+          </div>
+          <div class="section-product__bottom-card section-product__bottom-card2">
+            <a href="#"></a>
+            <div class="section-product__bottom-content">
+              <span class="section-product__bottom-note">50% OFF</span>
+              <h3 class="section-product__bottom-title">ELECT DRON</h3>
+              <p class="section-product__bottom-text">Stylish Designs</p>
+            </div>
+          </div>
+          <div class="section-product__bottom-card section-product__bottom-card3">
+            <a href="#"></a>
+            <div class="section-product__bottom-content section-product__bottom-content-card3">
+              <span class="section-product__bottom-note">LIMITED EDITION</span>
+              <h3 class="section-product__bottom-title section-product__bottom-title-card3">SUMMER SPECIAL OFF</h3>
+              <p class="section-product__bottom-text section-product__bottom-text-card3">Lorem Ipsum is simply dummy text of the printing and tyeseting industry.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-specials">
+      <div class="section-specials__container container">
+        <div class="section-specials__header">
+          <h2 tabindex="0" aria-label="SPECIALS" class="title section-specials__title">SPECIALS</h2>
+          <div class="swiper-button-prev section-specials__button-prev"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" class="section-product__button-next-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="#939393" d="M447.1 256C447.1 273.7 433.7 288 416 288H109.3l105.4 105.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H416C433.7 224 447.1 238.3 447.1 256z"></path></svg></div>
+          <div class="swiper-button-next section-specials__button-next"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-product__button-next-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="#939393" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg></div>
+        </div>
+        <div class="section-specials__content">
+          <div class="section-specials__swipper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide section-specials__swipper-slide">
+                <div class="section-specials__card">
+                  <div class="section-specials__img section-specials__tab3-img1"></div>
+                  <div class="section-specials__card-content">
+                    <h3 class="section-specials__card-title"><a class="section-specials__card-link" href="">Animation Descentqtion</a></h3>
+                    <div class="section-specials__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-specials__card-info">$ 1,082.00<span class="section-specials__card-sale">10%</span> <s class="section-specials__card-crossed">$1,902.00</s></p>
+                    <button class="section-specials__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- slide 2 -->
+              <div class="swiper-slide section-specials__swipper-slide">
+                <div class="section-specials__card">
+                  <div class="section-specials__img section-specials__tab3-img2"></div>
+                  <div class="section-specials__card-content">
+                    <h3 class="section-specials__card-title"><a class="section-specials__card-link" href="">Bhumitationa Centyraon</a></h3>
+                    <div class="section-specials__rating">
+                      <span class="fa fa-stack">
+                        <i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i> </span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-specials__card-info">$ 842.00<span class="section-specials__card-sale">30%</span> <s class="section-specials__card-crossed">$1,202.00</s></p>
+                    <button class="section-specials__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="swiper-slide section-specials__swipper-slide">
+                <div class="section-specials__card">
+                  <div class="section-specials__img section-specials__tab3-img3"></div>
+                  <div class="section-specials__card-content">
+                    <h3 class="section-specials__card-title"><a class="section-specials__card-link" href="">Cum Sociis Natoque</a></h3>
+                    <div class="section-specials__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-specials__card-info">$ 98.00<span class="section-specials__card-sale">20%</span> <s class="section-specials__card-crossed">$122.00</s></p>
+                    <button class="section-specials__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="swiper-slide section-specials__swipper-slide">
+                <div class="section-specials__card">
+                  <div class="section-specials__img section-specials__tab3-img4"></div>
+                  <div class="section-specials__card-content">
+                    <h3 class="section-specials__card-title"><a class="section-specials__card-link" href="">Curabitur Dolor Nunc</a></h3>
+                    <div class="section-specials__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-specials__card-info">$ 110.00<span class="section-specials__card-sale">10%</span> <s class="section-specials__card-crossed">$122.00</s></p>
+                    <button class="section-specials__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="swiper-slide section-specials__swipper-slide">
+                <div class="section-specials__card">
+                  <div class="section-specials__img section-specials__tab3-img5"></div>
+                  <div class="section-specials__card-content">
+                    <h3 class="section-specials__card-title"><a class="section-specials__card-link" href="">Formation Venkash</a></h3>
+                    <div class="section-specials__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-specials__card-info">$ 122.00<span class="section-specials__card-sale">50%</span> <s class="section-specials__card-crossed">$242.99.00</s></p>
+                    <button class="section-specials__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="swiper-slide section-specials__swipper-slide">
+                <div class="section-specials__card">
+                  <div class="section-specials__img section-specials__tab3-img6"></div>
+                  <div class="section-specials__card-content">
+                    <h3 class="section-specials__card-title"><a class="section-specials__card-link" href="">Mauris Blandit Vehicula</a></h3>
+                    <div class="section-specials__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-specials__card-info">$ 1000.00<span class="section-specials__card-sale">50%</span> <s class="section-specials__card-crossed">$2,000.00</s></p>
+                    <button class="section-specials__card-button">ADD TO CARD</button>
+                  </div>
+
+                </div>
+              </div>
+              <!-- 7 -->
+              <div class="swiper-slide section-specials__swipper-slide">
+                <div class="section-specials__card">
+                  <div class="section-specials__img section-specials__tab3-img7"></div>
+                  <div class="section-specials__card-content">
+                    <h3 class="section-specials__card-title"><a class="section-specials__card-link" href="">Meghpolo Nepturis</a></h3>
+                    <div class="section-specials__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-specials__card-info">$ 242.00<span class="section-specials__card-sale">29%</span> <s class="section-specials__card-crossed">$337.00</s></p>
+                    <button class="section-specials__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 8 -->
+              <div class="swiper-slide section-specials__swipper-slide">
+                <div class="section-specials__card">
+                  <div class="section-specials__img section-specials__tab3-img8"></div>
+                  <div class="section-specials__card-content">
+                    <h3 class="section-specials__card-title"><a class="section-specials__card-link" href="">Suspendisse Massa Nulla</a></h3>
+                    <div class="section-specials__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-specials__card-info">$ 62.00<span class="section-specials__card-sale">50%</span> <s class="section-specials__card-crossed">$122.00</s></p>
+                    <button class="section-specials__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 9 -->
+              <div class="swiper-slide section-specials__swipper-slide">
+                <div class="section-specials__card">
+                  <div class="section-specials__img section-specials__tab3-img9"></div>
+                  <div class="section-specials__card-content">
+                    <h3 class="section-specials__card-title"><a class="section-specials__card-link" href="">Tarundecf Beseking</a></h3>
+                    <div class="section-specials__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-specials__card-info">$ 482.00<span class="section-specials__card-sale">20%</span> <s class="section-specials__card-crossed">$602.00</s></p>
+                    <button class="section-specials__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 10 -->
+              <div class="swiper-slide section-specials__swipper-slide">
+                <div class="section-specials__card">
+                  <div class="section-specials__img section-specials__tab3-img10"></div>
+                  <div class="section-specials__card-content">
+                    <h3 class="section-specials__card-title"><a class="section-specials__card-link" href="">Mauris Blandit Vehicula</a></h3>
+                    <div class="section-specials__rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                    </div>
+                    <p class="section-specials__card-info">$ 122.00<span class="section-specials__card-sale">1%</span> <s class="section-specials__card-crossed">$123.20</s></p>
+                    <button class="section-specials__card-button">ADD TO CARD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-specials__bottom-swipper-container">
+          <div class="swiper-button-prev section-specials__bottom-button-prev "><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" class="section-specials__bottom-button-prev-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="#939393" d="M447.1 256C447.1 273.7 433.7 288 416 288H109.3l105.4 105.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H416C433.7 224 447.1 238.3 447.1 256z"></path></svg></div>
+          <div class="swiper section-specials__bottom-swipper">
+            <div class="swiper-wrapper  section-specials__bottom-swiper-wrapper">
+              <div class="swiper-slide section-specials__bottom-swiper-slide section-specials__bottom-swiper-slide1">
+                <img class="section-special__bottom-img" src="./src/images/companyBusines.png" alt="">
+              </div>
+              <div class="swiper-slide section-specials__bottom-swiper-slide section-specials__bottom-swiper-slide2">
+                <img class="section-special__bottom-img" src="./src/images/companyPrestige.png" alt="">
+              </div>
+              <div class="swiper-slide section-specials__bottom-swiper-slide section-specials__bottom-swiper-slide3 ">
+                <img class="section-special__bottom-img" src="./src/images/companyRetrobrand.png " alt=" ">
+              </div>
+              <div class="swiper-slide section-specials__bottom-swiper-slide section-specials__bottom-swiper-slide4 ">
+                <img class="section-special__bottom-img" src="./src/images/companyShopname.png " alt=" ">
+              </div>
+              <div class="swiper-slide section-specials__bottom-swiper-slide section-specials__bottom-swiper-slide5 ">
+                <img class="section-special__bottom-img" src="./src/images/companyBusines.png " alt=" ">
+              </div>
+              <div class="swiper-slide section-specials__bottom-swiper-slide section-specials__bottom-swiper-slide6 ">
+                <img class="section-special__bottom-img" src="./src/images/companyPrestige.png " alt=" ">
+              </div>
+              <div class="swiper-slide section-specials__bottom-swiper-slide section-specials__bottom-swiper-slide7 ">
+                <img class="section-special__bottom-img" src="./src/images/companyRetrobrand.png " alt=" ">
+              </div>
+              <div class="swiper-slide section-specials__bottom-swiper-slide section-specials__bottom-swiper-slide8 ">
+                <img class="section-special__bottom-img" src="./src/images/companyShopname.png " alt=" ">
+              </div>
+              <div class="swiper-slide section-specials__bottom-swiper-slide section-specials__bottom-swiper-slide9 ">
+                <img class="section-special__bottom-img" src="./src/images/companyBusines.png " alt=" ">
+              </div>
+              <div class="swiper-slide section-specials__bottom-swiper-slide section-specials__bottom-swiper-slide10 ">
+                <img class="section-special__bottom-img" src="./src/images/companyPrestige.png " alt=" ">
+              </div>
+              <div class="swiper-slide section-specials__bottom-swiper-slide section-specials__bottom-swiper-slide11 ">
+                <img class="section-special__bottom-img" src="./src/images/companyRetrobrand.png " alt=" ">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next section-specials__bottom-button-next "><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-specials__bottom-button-next-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="#939393" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-blog">
+      <div class="container section-blog__container">
+        <h2 tabindex="0" aria-label="Section LATEST BLOG" class="title section-blog__title">LATEST BLOG</h2>
+        <!-- swiper -->
+        <div class="swiper section-blog__swipper">
+          <div class="swiper-wrapper section-blog__swiper-wripper">
+            <!-- 1 -->
+            <div class="swiper-slide section-blog__swiper-slide section-blog__swiper-slide1">
+              <div class="section-blog__card">
+                <div class="section-blog__fone section-blog__fone-card1">
+                  <div class="section-blog__fone-detal">
+                    <div class="section-blog__btn-group">
+                      <button class="section-blog__btn">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass-plus" class="section-blog__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7c-12.23-91.55-87.28-166-178.9-177.6c-136.2-17.24-250.7 97.28-233.4 233.4c11.6 91.64 86.07 166.7 177.6 178.9c53.81 7.191 104.3-6.235 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 .0003C515.9 484.7 515.9 459.3 500.3 443.7zM288 232H231.1V288c0 13.26-10.74 24-23.1 24C194.7 312 184 301.3 184 288V232H127.1C114.7 232 104 221.3 104 208s10.74-24 23.1-24H184V128c0-13.26 10.74-24 23.1-24S231.1 114.7 231.1 128v56h56C301.3 184 312 194.7 312 208S301.3 232 288 232z"></path></svg>
+                      </button>
+                      <button class="section-blog__btn">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="section-blog__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512"><path fill="currentColor" d="M598.6 41.41C570.1 13.8 534.8 0 498.6 0s-72.36 13.8-99.96 41.41l-43.36 43.36c15.11 8.012 29.47 17.58 41.91 30.02c3.146 3.146 5.898 6.518 8.742 9.838l37.96-37.96C458.5 72.05 477.1 64 498.6 64c20.67 0 40.1 8.047 54.71 22.66c14.61 14.61 22.66 34.04 22.66 54.71s-8.049 40.1-22.66 54.71l-133.3 133.3C405.5 343.1 386 352 365.4 352s-40.1-8.048-54.71-22.66C296 314.7 287.1 295.3 287.1 274.6s8.047-40.1 22.66-54.71L314.2 216.4C312.1 212.5 309.9 208.5 306.7 205.3C298.1 196.7 286.8 192 274.6 192c-11.93 0-23.1 4.664-31.61 12.97c-30.71 53.96-23.63 123.6 22.39 169.6C293 402.2 329.2 416 365.4 416c36.18 0 72.36-13.8 99.96-41.41L598.6 241.3c28.45-28.45 42.24-66.01 41.37-103.3C639.1 102.1 625.4 68.16 598.6 41.41zM234 387.4L196.1 425.3C181.5 439.1 162 448 141.4 448c-20.67 0-40.1-8.047-54.71-22.66c-14.61-14.61-22.66-34.04-22.66-54.71s8.049-40.1 22.66-54.71l133.3-133.3C234.5 168 253.1 160 274.6 160s40.1 8.048 54.71 22.66c14.62 14.61 22.66 34.04 22.66 54.71s-8.047 40.1-22.66 54.71L325.8 295.6c2.094 3.939 4.219 7.895 7.465 11.15C341.9 315.3 353.3 320 365.4 320c11.93 0 23.1-4.664 31.61-12.97c30.71-53.96 23.63-123.6-22.39-169.6C346.1 109.8 310.8 96 274.6 96C238.4 96 202.3 109.8 174.7 137.4L41.41 270.7c-27.6 27.6-41.41 63.78-41.41 99.96c-.0001 36.18 13.8 72.36 41.41 99.97C69.01 498.2 105.2 512 141.4 512c36.18 0 72.36-13.8 99.96-41.41l43.36-43.36c-15.11-8.012-29.47-17.58-41.91-30.02C239.6 394.1 236.9 390.7 234 387.4z"></path></svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <span class="section-blog__note">18, 09, 2018</span>
+                <p class="section-blog__text">Ligula Quam Vestibulum consequat convallis</p>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="swiper-slide section-blog__swiper-slide section-blog__swiper-slide2">
+              <div class="section-blog__card">
+                <div class="section-blog__fone section-blog__fone-card2">
+                  <div class="section-blog__fone-detal">
+                    <div class="section-blog__btn-group">
+                      <button class="section-blog__btn">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass-plus" class="section-blog__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7c-12.23-91.55-87.28-166-178.9-177.6c-136.2-17.24-250.7 97.28-233.4 233.4c11.6 91.64 86.07 166.7 177.6 178.9c53.81 7.191 104.3-6.235 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 .0003C515.9 484.7 515.9 459.3 500.3 443.7zM288 232H231.1V288c0 13.26-10.74 24-23.1 24C194.7 312 184 301.3 184 288V232H127.1C114.7 232 104 221.3 104 208s10.74-24 23.1-24H184V128c0-13.26 10.74-24 23.1-24S231.1 114.7 231.1 128v56h56C301.3 184 312 194.7 312 208S301.3 232 288 232z"></path></svg>
+                      </button>
+                      <button class="section-blog__btn">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="section-blog__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512"><path fill="currentColor" d="M598.6 41.41C570.1 13.8 534.8 0 498.6 0s-72.36 13.8-99.96 41.41l-43.36 43.36c15.11 8.012 29.47 17.58 41.91 30.02c3.146 3.146 5.898 6.518 8.742 9.838l37.96-37.96C458.5 72.05 477.1 64 498.6 64c20.67 0 40.1 8.047 54.71 22.66c14.61 14.61 22.66 34.04 22.66 54.71s-8.049 40.1-22.66 54.71l-133.3 133.3C405.5 343.1 386 352 365.4 352s-40.1-8.048-54.71-22.66C296 314.7 287.1 295.3 287.1 274.6s8.047-40.1 22.66-54.71L314.2 216.4C312.1 212.5 309.9 208.5 306.7 205.3C298.1 196.7 286.8 192 274.6 192c-11.93 0-23.1 4.664-31.61 12.97c-30.71 53.96-23.63 123.6 22.39 169.6C293 402.2 329.2 416 365.4 416c36.18 0 72.36-13.8 99.96-41.41L598.6 241.3c28.45-28.45 42.24-66.01 41.37-103.3C639.1 102.1 625.4 68.16 598.6 41.41zM234 387.4L196.1 425.3C181.5 439.1 162 448 141.4 448c-20.67 0-40.1-8.047-54.71-22.66c-14.61-14.61-22.66-34.04-22.66-54.71s8.049-40.1 22.66-54.71l133.3-133.3C234.5 168 253.1 160 274.6 160s40.1 8.048 54.71 22.66c14.62 14.61 22.66 34.04 22.66 54.71s-8.047 40.1-22.66 54.71L325.8 295.6c2.094 3.939 4.219 7.895 7.465 11.15C341.9 315.3 353.3 320 365.4 320c11.93 0 23.1-4.664 31.61-12.97c30.71-53.96 23.63-123.6-22.39-169.6C346.1 109.8 310.8 96 274.6 96C238.4 96 202.3 109.8 174.7 137.4L41.41 270.7c-27.6 27.6-41.41 63.78-41.41 99.96c-.0001 36.18 13.8 72.36 41.41 99.97C69.01 498.2 105.2 512 141.4 512c36.18 0 72.36-13.8 99.96-41.41l43.36-43.36c-15.11-8.012-29.47-17.58-41.91-30.02C239.6 394.1 236.9 390.7 234 387.4z"></path></svg>
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <span class="section-blog__note">18, 09, 2018</span>
+                <p class="section-blog__text">Laoreet Vestibulum lacinia massa a commodo habitasse velit</p>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="swiper-slide section-blog__swiper-slide section-blog__swiper-slide3">
+              <div class="section-blog__card">
+                <div class="section-blog__fone section-blog__fone-card3">
+                  <div class="section-blog__fone-detal">
+                    <div class="section-blog__btn-group">
+                      <button class="section-blog__btn">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass-plus" class="section-blog__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7c-12.23-91.55-87.28-166-178.9-177.6c-136.2-17.24-250.7 97.28-233.4 233.4c11.6 91.64 86.07 166.7 177.6 178.9c53.81 7.191 104.3-6.235 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 .0003C515.9 484.7 515.9 459.3 500.3 443.7zM288 232H231.1V288c0 13.26-10.74 24-23.1 24C194.7 312 184 301.3 184 288V232H127.1C114.7 232 104 221.3 104 208s10.74-24 23.1-24H184V128c0-13.26 10.74-24 23.1-24S231.1 114.7 231.1 128v56h56C301.3 184 312 194.7 312 208S301.3 232 288 232z"></path></svg>
+                      </button>
+                      <button class="section-blog__btn">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="section-blog__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512"><path fill="currentColor" d="M598.6 41.41C570.1 13.8 534.8 0 498.6 0s-72.36 13.8-99.96 41.41l-43.36 43.36c15.11 8.012 29.47 17.58 41.91 30.02c3.146 3.146 5.898 6.518 8.742 9.838l37.96-37.96C458.5 72.05 477.1 64 498.6 64c20.67 0 40.1 8.047 54.71 22.66c14.61 14.61 22.66 34.04 22.66 54.71s-8.049 40.1-22.66 54.71l-133.3 133.3C405.5 343.1 386 352 365.4 352s-40.1-8.048-54.71-22.66C296 314.7 287.1 295.3 287.1 274.6s8.047-40.1 22.66-54.71L314.2 216.4C312.1 212.5 309.9 208.5 306.7 205.3C298.1 196.7 286.8 192 274.6 192c-11.93 0-23.1 4.664-31.61 12.97c-30.71 53.96-23.63 123.6 22.39 169.6C293 402.2 329.2 416 365.4 416c36.18 0 72.36-13.8 99.96-41.41L598.6 241.3c28.45-28.45 42.24-66.01 41.37-103.3C639.1 102.1 625.4 68.16 598.6 41.41zM234 387.4L196.1 425.3C181.5 439.1 162 448 141.4 448c-20.67 0-40.1-8.047-54.71-22.66c-14.61-14.61-22.66-34.04-22.66-54.71s8.049-40.1 22.66-54.71l133.3-133.3C234.5 168 253.1 160 274.6 160s40.1 8.048 54.71 22.66c14.62 14.61 22.66 34.04 22.66 54.71s-8.047 40.1-22.66 54.71L325.8 295.6c2.094 3.939 4.219 7.895 7.465 11.15C341.9 315.3 353.3 320 365.4 320c11.93 0 23.1-4.664 31.61-12.97c30.71-53.96 23.63-123.6-22.39-169.6C346.1 109.8 310.8 96 274.6 96C238.4 96 202.3 109.8 174.7 137.4L41.41 270.7c-27.6 27.6-41.41 63.78-41.41 99.96c-.0001 36.18 13.8 72.36 41.41 99.97C69.01 498.2 105.2 512 141.4 512c36.18 0 72.36-13.8 99.96-41.41l43.36-43.36c-15.11-8.012-29.47-17.58-41.91-30.02C239.6 394.1 236.9 390.7 234 387.4z"></path></svg>
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <span class="section-blog__note">18, 09, 2018</span>
+                <p class="section-blog__text">Nullam ullamcorper nisl quis ornare molestie</p>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="swiper-slide section-blog__swiper-slide section-blog__swiper-slide4">
+              <div class="section-blog__card">
+                <div class="section-blog__fone section-blog__fone-card4">
+                  <div class="section-blog__fone-detal">
+                    <div class="section-blog__btn-group">
+                      <button class="section-blog__btn">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass-plus" class="section-blog__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7c-12.23-91.55-87.28-166-178.9-177.6c-136.2-17.24-250.7 97.28-233.4 233.4c11.6 91.64 86.07 166.7 177.6 178.9c53.81 7.191 104.3-6.235 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 .0003C515.9 484.7 515.9 459.3 500.3 443.7zM288 232H231.1V288c0 13.26-10.74 24-23.1 24C194.7 312 184 301.3 184 288V232H127.1C114.7 232 104 221.3 104 208s10.74-24 23.1-24H184V128c0-13.26 10.74-24 23.1-24S231.1 114.7 231.1 128v56h56C301.3 184 312 194.7 312 208S301.3 232 288 232z"></path></svg>
+                      </button>
+                      <button class="section-blog__btn">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="section-blog__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512"><path fill="currentColor" d="M598.6 41.41C570.1 13.8 534.8 0 498.6 0s-72.36 13.8-99.96 41.41l-43.36 43.36c15.11 8.012 29.47 17.58 41.91 30.02c3.146 3.146 5.898 6.518 8.742 9.838l37.96-37.96C458.5 72.05 477.1 64 498.6 64c20.67 0 40.1 8.047 54.71 22.66c14.61 14.61 22.66 34.04 22.66 54.71s-8.049 40.1-22.66 54.71l-133.3 133.3C405.5 343.1 386 352 365.4 352s-40.1-8.048-54.71-22.66C296 314.7 287.1 295.3 287.1 274.6s8.047-40.1 22.66-54.71L314.2 216.4C312.1 212.5 309.9 208.5 306.7 205.3C298.1 196.7 286.8 192 274.6 192c-11.93 0-23.1 4.664-31.61 12.97c-30.71 53.96-23.63 123.6 22.39 169.6C293 402.2 329.2 416 365.4 416c36.18 0 72.36-13.8 99.96-41.41L598.6 241.3c28.45-28.45 42.24-66.01 41.37-103.3C639.1 102.1 625.4 68.16 598.6 41.41zM234 387.4L196.1 425.3C181.5 439.1 162 448 141.4 448c-20.67 0-40.1-8.047-54.71-22.66c-14.61-14.61-22.66-34.04-22.66-54.71s8.049-40.1 22.66-54.71l133.3-133.3C234.5 168 253.1 160 274.6 160s40.1 8.048 54.71 22.66c14.62 14.61 22.66 34.04 22.66 54.71s-8.047 40.1-22.66 54.71L325.8 295.6c2.094 3.939 4.219 7.895 7.465 11.15C341.9 315.3 353.3 320 365.4 320c11.93 0 23.1-4.664 31.61-12.97c30.71-53.96 23.63-123.6-22.39-169.6C346.1 109.8 310.8 96 274.6 96C238.4 96 202.3 109.8 174.7 137.4L41.41 270.7c-27.6 27.6-41.41 63.78-41.41 99.96c-.0001 36.18 13.8 72.36 41.41 99.97C69.01 498.2 105.2 512 141.4 512c36.18 0 72.36-13.8 99.96-41.41l43.36-43.36c-15.11-8.012-29.47-17.58-41.91-30.02C239.6 394.1 236.9 390.7 234 387.4z"></path></svg>
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <span class="section-blog__note">18, 09, 2018</span>
+                <p class="section-blog__text">Turpis at eleifend ps mi elit Aenean porta ac sed faucibus</p>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="swiper-slide section-blog__swiper-slide section-blog__swiper-slide5">
+              <div class="section-blog__card">
+                <div class="section-blog__fone section-blog__fone-card5">
+                  <div class="section-blog__fone-detal">
+                    <div class="section-blog__btn-group">
+                      <button class="section-blog__btn">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass-plus" class="section-blog__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7c-12.23-91.55-87.28-166-178.9-177.6c-136.2-17.24-250.7 97.28-233.4 233.4c11.6 91.64 86.07 166.7 177.6 178.9c53.81 7.191 104.3-6.235 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 .0003C515.9 484.7 515.9 459.3 500.3 443.7zM288 232H231.1V288c0 13.26-10.74 24-23.1 24C194.7 312 184 301.3 184 288V232H127.1C114.7 232 104 221.3 104 208s10.74-24 23.1-24H184V128c0-13.26 10.74-24 23.1-24S231.1 114.7 231.1 128v56h56C301.3 184 312 194.7 312 208S301.3 232 288 232z"></path></svg>
+                      </button>
+                      <button class="section-blog__btn">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="section-blog__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512"><path fill="currentColor" d="M598.6 41.41C570.1 13.8 534.8 0 498.6 0s-72.36 13.8-99.96 41.41l-43.36 43.36c15.11 8.012 29.47 17.58 41.91 30.02c3.146 3.146 5.898 6.518 8.742 9.838l37.96-37.96C458.5 72.05 477.1 64 498.6 64c20.67 0 40.1 8.047 54.71 22.66c14.61 14.61 22.66 34.04 22.66 54.71s-8.049 40.1-22.66 54.71l-133.3 133.3C405.5 343.1 386 352 365.4 352s-40.1-8.048-54.71-22.66C296 314.7 287.1 295.3 287.1 274.6s8.047-40.1 22.66-54.71L314.2 216.4C312.1 212.5 309.9 208.5 306.7 205.3C298.1 196.7 286.8 192 274.6 192c-11.93 0-23.1 4.664-31.61 12.97c-30.71 53.96-23.63 123.6 22.39 169.6C293 402.2 329.2 416 365.4 416c36.18 0 72.36-13.8 99.96-41.41L598.6 241.3c28.45-28.45 42.24-66.01 41.37-103.3C639.1 102.1 625.4 68.16 598.6 41.41zM234 387.4L196.1 425.3C181.5 439.1 162 448 141.4 448c-20.67 0-40.1-8.047-54.71-22.66c-14.61-14.61-22.66-34.04-22.66-54.71s8.049-40.1 22.66-54.71l133.3-133.3C234.5 168 253.1 160 274.6 160s40.1 8.048 54.71 22.66c14.62 14.61 22.66 34.04 22.66 54.71s-8.047 40.1-22.66 54.71L325.8 295.6c2.094 3.939 4.219 7.895 7.465 11.15C341.9 315.3 353.3 320 365.4 320c11.93 0 23.1-4.664 31.61-12.97c30.71-53.96 23.63-123.6-22.39-169.6C346.1 109.8 310.8 96 274.6 96C238.4 96 202.3 109.8 174.7 137.4L41.41 270.7c-27.6 27.6-41.41 63.78-41.41 99.96c-.0001 36.18 13.8 72.36 41.41 99.97C69.01 498.2 105.2 512 141.4 512c36.18 0 72.36-13.8 99.96-41.41l43.36-43.36c-15.11-8.012-29.47-17.58-41.91-30.02C239.6 394.1 236.9 390.7 234 387.4z"></path></svg>
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <span class="section-blog__note">18, 09, 2018</span>
+                <p class="section-blog__text">Morbi condimentum molestie Nam enim odio sodales</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- конец свайпера -->
+      </div>
+    </section>
+    <section class="section-contacts">
+
+      <div class="container section-contacts__container">
+        <ul class="section-contacts__list">
+          <li class="section-contacts__card section-contacts__card1">
+            <div class="section-contacts__left">
+              <img class="section-contacts__img section-contacts__img1" src="./src/images/1.png" alt="delivery-icon">
+            </div>
+            <div class="section-contacts__right">
+              <a class="section-contacts__link" href="">FREE WORLD DELIVERY</a>
+              <p class="section-contacts__text">Order Over $100</p>
+            </div>
+            <div class="section-contacts__right-border"></div>
+          </li>
+          <li class="section-contacts__card section-contacts__card2">
+            <div class="section-contacts__left">
+              <img class="section-contacts__img section-contacts__img2" src="./src/images/3.png" alt="money">
+            </div>
+            <div class="section-contacts__right">
+              <a class="section-contacts__link" href="">MONEY BACK GUARANTEE</a>
+              <p class="section-contacts__text">With A 30 Day</p>
+            </div>
+            <div class="section-contacts__right-border section-contacts__right-border-card2"></div>
+          </li>
+          <li class="section-contacts__card section-contacts__card3">
+            <div class="section-contacts__left">
+              <img class="section-contacts__img section-contacts__img3" src="./src/images/4.png" alt="support-icon">
+            </div>
+            <div class="section-contacts__right">
+              <a class="section-contacts__link" href="">BEST ONLINE SUPPORT</a>
+              <p class="section-contacts__text">Hours: 8AM - 11 PM</p>
+            </div>
+            <div class="section-contacts__right-border"></div>
+          </li>
+          <li class="section-contacts__card section-contacts__card4">
+            <div class="section-contacts__left">
+              <img class="section-contacts__img section-contacts__img4" src="./src/images/2.png" alt="free-returns-icon">
+            </div>
+            <div class="section-contacts__right">
+              <a class="section-contacts__link" href="">EAST & FREE RETURNS</a>
+              <p class="section-contacts__text">Hours: 8AM - 11 PM</p>
+            </div>
+
+          </li>
+
+        </ul>
+      </div>
+      <div class="container section-contacts__container-bottom">
+        <div class="section-contacts__content">
+          <div class="section-contacts__content-left">
+            <ul class="section-contacts__content-list">
+              <li class="section-contacts__content-item">
+                <img class="section-contacts__content-img" src="./src/images/icon-point.png" alt="icon-point">
+                <p class="section-contacts__content-text">705-Infinity Centre, Beside trafy building, united state</p>
+              </li>
+              <li class="section-contacts__content-item">
+                <img class="section-contacts__content-img" src="./src/images/icon-tel.png" alt="icon-telefone">
+                <p class="section-contacts__content-text">Call us: 0123-456-789</p>
+              </li>
+              <li class="section-contacts__content-item">
+                <img class="section-contacts__content-img" src="./src/images/icon-support.png" alt="icon-support">
+                <p class="section-contacts__content-text">support@yourstore.com</p>
+              </li>
+            </ul>
+          </div>
+          <div class="section-contacts__content-middle-first">
+            <h3 class="section-contacts__title-middle">Information</h3>
+            <ul class="section-contacts__list-middle-first">
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>About Us</a>                </li>
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>Dellivery Information</a>                </li>
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>Privacy policy</a>                </li>
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>Terms & Conditions</a>                </li>
+            </ul>
+          </div>
+          <div class="section-contacts__content-middle-second">
+            <h3 class="section-contacts__title-middle">My account </h3>
+            <ul class="section-contacts__list-middle-second">
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>My Account</a>                </li>
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>Specials</a>                </li>
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>Contact Us</a>                </li>
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>Site Map</a>                </li>
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>Brands</a></li>
+            </ul>
+          </div>
+          <div class="section-contacts__content-right">
+            <h3 class="section-contacts__title-middle">SIGN UP FOR NEWSLETTER</h3>
+            <form class="section-contacts__form">
+              <input placeholder="E-mail" name="email" class="section-contacts__input" type="email">
+              <button class="section-contacts__form-btn">SUBSCRIBE</button>
+            </form>
+            <div class="section-contacts__group-link">
+              <ul class="section-contacts__list-link">
+                <li class="section-contacts__item-social">
+                  <a class="section-contacts__social-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="section-contacts__social-img" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512"><path fill="black" d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path></svg></a>
+                </li>
+                <li class="section-contacts__item-social">
+                  <a class="section-contacts__social-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google" class="section-contacts__social-img" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 488 512"><path fill="black" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path></svg></a>
+                </li>
+                <li class="section-contacts__item-social">
+                  <a class="section-contacts__social-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="section-contacts__social-img" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="black" d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path></svg></a>
+                </li>
+                <li class="section-contacts__item-social">
+                  <a class="section-contacts__social-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest" class="section-contacts__social-img" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 496 512"><path fill="black" d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"></path></svg></a>
+                </li>
+                <li class="section-contacts__item-social">
+                  <a class="section-contacts__social-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="section-contacts__social-img" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="black" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- accordion 724 -->
+      <div class="container section-contacts__container-724">
+        <div id="accordion" class="section-contacts__accordion contacts-accordion">
+          <h3 class="contacts-accordion__item">
+            <a href="" class="contacts-accordion__link">STORE INFORMATION</a>
+            <button class="contacts-accordion__btn" aria-label="развернуть/свернуть">
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="contacts-accordion__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><path fill="currentColor" d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path></svg>
+            </button>
+          </h3>
+          <div class="contacts-accordion__content">
+            <div class="section-contacts__content-left">
+              <ul class="section-contacts__content-list">
+                <li class="section-contacts__content-item">
+                  <img class="section-contacts__content-img" src="./src/images/icon-point.png" alt="icon-point">
+                  <p class="section-contacts__content-text">705-Infinity Centre, Beside trafy building, united state</p>
+                </li>
+                <li class="section-contacts__content-item">
+                  <img class="section-contacts__content-img" src="./src/images/icon-tel.png" alt="icon-telefone">
+                  <p class="section-contacts__content-text">Call us: 0123-456-789</p>
+                </li>
+                <li class="section-contacts__content-item">
+                  <img class="section-contacts__content-img" src="./src/images/icon-support.png" alt="icon-support">
+                  <p class="section-contacts__content-text">support@yourstore.com</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h3 class="contacts-accordion__item">
+            <a href="" class="contacts-accordion__link">INFORMATION</a>
+            <button class="contacts-accordion__btn" aria-label="развернуть/свернуть">
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="contacts-accordion__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><path fill="currentColor" d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path></svg>
+            </button>
+          </h3>
+          <div class="contacts-accordion__content">
+            <ul class="section-contacts__list-middle-first">
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>About Us</a>                </li>
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>Dellivery Information</a>                </li>
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>Privacy policy</a>                </li>
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>Terms & Conditions</a>                </li>
+            </ul>
+          </div>
+          <h3 class="contacts-accordion__item">
+            <a href="" class="contacts-accordion__link">MY ACCOUNT</a>
+            <button class="contacts-accordion__btn" aria-label="развернуть/свернуть">
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="contacts-accordion__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><path fill="currentColor" d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path></svg>
+            </button>
+          </h3>
+          <div class="contacts-accordion__content">
+            <ul class="section-contacts__list-middle-second">
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>My Account</a>                </li>
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>Specials</a>                </li>
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>Contact Us</a>                </li>
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>Site Map</a>                </li>
+              <li class="section-contacts__item-middle">
+                <a class="section-contacts__middle-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="section-contacts__svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"></path></svg>Brands</a></li>
+            </ul>
+          </div>
+          <h3 class="contacts-accordion__item">
+            <a href="" class="contacts-accordion__link">SIGN UP FOR NEWSLETTER</a>
+            <button class="contacts-accordion__btn" aria-label="развернуть/свернуть">
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="contacts-accordion__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><path fill="currentColor" d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path></svg>
+            </button>
+          </h3>
+          <div class="contacts-accordion__content">
+            <form class="section-contacts__form">
+              <input placeholder="E-mail" name="email" class="section-contacts__input" type="email">
+              <button class="section-contacts__form-btn">SUBSCRIBE</button>
+            </form>
+          </div>
+          <h3 class="contacts-accordion__item">
+            <a href="" class="contacts-accordion__link">SOCIAL MEDIA</a>
+            <button class="contacts-accordion__btn" aria-label="развернуть/свернуть">
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" class="contacts-accordion__btn-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><path fill="currentColor" d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path></svg>
+            </button>
+          </h3>
+          <div class="contacts-accordion__content">
+            <div class="section-contacts__group-link">
+              <ul class="section-contacts__list-link">
+                <li class="section-contacts__item-social">
+                  <a class="section-contacts__social-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="section-contacts__social-img" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512"><path fill="black" d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path></svg></a>
+                </li>
+                <li class="section-contacts__item-social">
+                  <a class="section-contacts__social-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google" class="section-contacts__social-img" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 488 512"><path fill="black" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path></svg></a>
+                </li>
+                <li class="section-contacts__item-social">
+                  <a class="section-contacts__social-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="section-contacts__social-img" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="black" d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path></svg></a>
+                </li>
+                <li class="section-contacts__item-social">
+                  <a class="section-contacts__social-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest" class="section-contacts__social-img" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 496 512"><path fill="black" d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"></path></svg></a>
+                </li>
+                <li class="section-contacts__item-social">
+                  <a class="section-contacts__social-link" href=""><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="section-contacts__social-img" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="black" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__content">
+        <div class="footer__left">
+          <a class="footer__left-link" href="">Powered By</a>
+          <a class="footer__left-link" href="">OpenCart</a>
+          <p class="footer__text">Your Store © 2021</p>
+        </div>
+        <div class="footer__container__link">
+          <ul class="footer__list">
+            <li class="footer__item-link">
+              <a class="footer__social-link" href=""><img class="footer__link-icon" src="./src/images/Discover.png" alt=""></a>
+            </li>
+            <li class="footer__item-link">
+
+              <a class="footer__social-link" href=""> <img class="footer__link-icon" src="./src/images/Wallte.png" alt="Discover"></a>
+            </li>
+            <li class="footer__item-link">
+              <a class="footer__social-link" href=""><img class="footer__link-icon" src="./src/images/Mestro.png" alt="Wallte"></a>
+            </li>
+            <li class="footer__item-link">
+              <a class="footer__social-link" href=""> <img class="footer__link-icon" src="./src/images/Master.png" alt="Mestro"></a>
+            </li>
+            <li class="footer__item-link">
+              <a class="footer__social-link" href=""> <img class="footer__link-icon" src="./src/images/Paypal.png" alt="Master"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js "></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script defer src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script defer src="./src/scripts/index.js "></script>
+</body>
+
+</html>
